@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+
+	.form-container {
+		margin-left: 25%;
+		margin-top: 8%;
+	}
+
+	.register-input {
+		border-bottom: 1px solid gray;
+	}
+
+	.register-input input {
+		border: none;
+		outline: none;
+		float: left;
+	}
+
+	.register-table td {
+		padding: 2px 60px;
+		padding-top: 5%;
+	}
+
+	.registration-headers {
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.registration-sub-btn {
+		margin-left: 42%;
+		margin-top: 2%;
+	}
+
+	.registration-sub-btn button {
+		background-color: orangered;
+		border: none;
+		font-size: 20px;
+		border-radius: 30px;
+		color: white;
+		padding: 2% 25%;
+	}
+
+	.registration-main-header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-top: 2%;
+	}
+
+	.header-image {
+		width: 20%;
+		margin-left: 5%
+	}
+
+	.header-text {
+		font-size: 30px;
+		font-weight: bold;
+		margin-left: 32%;
+	}
+
+	.home-icon {
+		margin-left: 60%;
+		padding: 4% 5%;
+		text-decoration: none;
+		color: black;
+		border-radius: 50%;
+	}
+
+	.home-icon1 {
+		padding: 4% 5%;
+		text-decoration: none;
+		color: black;
+		border-radius: 50%;
+	}
+
+	.input-header {
+		float: left;
+		font-weight: bold;
+	}
+</style>
+
+<body>
+	<div class="registration-main-header">
+		<div>
+			<div>
+				<img class="header-image" src="https://www.pngmart.com/files/3/Vote-PNG-Photos.png" alt="">
+			</div>
+		</div>
+		<div>
+			<div>
+				<p class="header-text">ADMIN</p>
+			</div>
+		</div>
+		<div>
+			<div>
+				<a class="home-icon" href="vote_home.html"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+						height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+						<path
+							d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+					</svg></a>
+				<a class="home-icon1" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+						fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+						<path
+							d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+					</svg></a>
+			</div>
+		</div>
+	</div>
+	<div class="form-container">
+		<form action="validate_admin.jsp" method="post">
+			<table class="register-table">
+				<tr>
+					<td>
+						<p class="input-header">User Name</p>
+					</td>
+					<td class="register-input">
+						<input type="text" placeholder="Enter your user name" name="user_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="input-header">User Password</p>
+					</td>
+					<td class="register-input">
+						<input type="text" placeholder="Enter your user password" name="user_password">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<div class="registration-sub-btn">
+							<button type="submit">Log in</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Admin</title>
+	<style>
+		body {
+			font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+				"Lucida Sans", Arial, sans-serif;
+			padding: 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background: linear-gradient(120deg,
+					rgba(255, 0, 0, 0.516),
+					rgb(225, 159, 35),
+					rgba(255, 68, 0, 0.402),
+					rgba(255, 68, 0, 0.845));
+			height: 100vh;
+			overflow: hidden;
+		}
+
+		.main-admin-page {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin-top: 8%;
+		}
+
+		.election-container {
+			margin-left: 10%;
+			padding: 5% 10%;
+			background-color: #f9f9f99e;
+			border-radius: 30px;
+		}
+
+		.election-container h3 {
+			border-bottom: 2px solid orangered;
+			margin-left: 13%;
+			margin-right: 25%;
+		}
+
+		.election-container a {
+			margin-left: 15%;
+			padding: 2% 15%;
+			background-color: orangered;
+			color: white;
+			text-decoration: none;
+			border-radius: 10px;
+		}
+
+		.candidate-container {
+			margin-left: 10%;
+			padding: 5% 10%;
+			background-color: #f9f9f99e;
+			border-radius: 30px;
+		}
+
+		.candidate-container h3 {
+			border-bottom: 2px solid orangered;
+			margin-left: 15%;
+			margin-right: 25%;
+		}
+
+		.candidate-container a {
+			margin-left: 15%;
+			padding: 2% 15%;
+			background-color: orangered;
+			color: white;
+			text-decoration: none;
+			border-radius: 10px;
+		}
+
+		.voter-container {
+			margin-left: 10%;
+			padding: 5% 10%;
+			background-color: #f9f9f99e;
+			border-radius: 30px;
+		}
+
+		.voter-container h3 {
+			border-bottom: 2px solid orangered;
+			margin-left: 15%;
+			margin-right: 25%;
+		}
+
+		.voter-container a {
+			margin-left: 15%;
+			padding: 2% 15%;
+			background-color: orangered;
+			color: white;
+			text-decoration: none;
+			border-radius: 10px;
+		}
+
+		.header-for-admin {
+			margin-top: 5%;
+		}
+
+		.header-for-admin h1 {
+			padding: 1% 2.5%;
+			margin-left: 40%;
+			margin-right: 35%;
+			border-radius: 30px;
+			background-color: #f9f9f99e;
+		}
+
+		.res-btn {
+			margin-left: 15%;
+			padding: 2% 15%;
+			background-color: orangered;
+			color: white;
+			text-decoration: none;
+			border-radius: 10px;
+		}
+
+		.res-container {
+			margin-top: 4%;
+			margin-left: 25%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header-for-admin">
+		<h1>ADMINSTRATION</h1>
+	</div>
+	<div class="main-admin-page">
+		<div>
+			<div class="election-container">
+				<h3>ELECTION DETAILS</h3>
+				<p>For annoucing election start date and end date.</p>
+				<p>For viewing and removing election.</p>
+				<a href="election_page.jsp">Click here</a>
+			</div>
+		</div>
+		<div>
+			<div class="candidate-container">
+				<h3>CANDIDATE DETAILS</h3>
+				<p>For viewing a Candidates details and verifying the details.</p>
+				<p>For adding and removing a candidates.</p>
+				<a href="candidate_page.jsp">Click here</a>
+			</div>
+		</div>
+		<div>
+			<div class="voter-container">
+				<h3>VOTER DETAILS</h3>
+				<p>For viewing a voter's details and verifying the details.</p>
+				<p>For adding and removing a voter's.</p>
+				<a href="view_all_voters.jsp">Click here</a>
+			</div>
+		</div>
+	</div>
+	<div class="res-container">
+		<a class="res-btn" href="voating_result.jsp">VOATING RESULT</a>
+	</div>
+</body>
+
+</html>
